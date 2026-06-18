@@ -1015,11 +1015,11 @@ kbd {
 }
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 640px) {
   :root { --nav-h: 64px; }
   .section { padding: 70px 20px; }
 
-  /* Nav mobile */
   .nav-toggle { display: flex; }
   .nav-links {
     position: fixed;
@@ -1047,27 +1047,22 @@ kbd {
   .hero-cta { flex-direction: column; align-items: center; }
   .btn { width: 100%; max-width: 300px; justify-content: center; }
 
- @media (max-width: 640px) {
   .dev-grid {
     grid-template-columns: 1fr !important;
     justify-items: center;
   }
-
   .dev-card {
     width: 90%;
     max-width: 300px;
-    margin: 0 auto !important; /* tambah !important */
+    margin: 0 auto !important;
   }
-
-  /* Reset posisi khusus card 4 & 5 */
   .dev-card:nth-child(4),
   .dev-card:nth-child(5) {
     grid-column: auto !important;
     margin-left: auto !important;
   }
-}
-  .gallery-grid { grid-template-columns: 1fr; }
 
+  .gallery-grid { grid-template-columns: 1fr; }
   .about-card { padding: 28px 22px; }
   .story-stats { gap: 12px; }
 }
