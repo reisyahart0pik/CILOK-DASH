@@ -1,5 +1,12 @@
 const filterButtons = document.querySelectorAll(".tab-btn");
 const galleryItems = document.querySelectorAll(".gallery-item");
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open');
+});
 
 filterButtons.forEach(button => {
 
