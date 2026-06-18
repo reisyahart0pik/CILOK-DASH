@@ -27,6 +27,7 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#developer" class="nav-link">Developer</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#rating" class="nav-link">Rating</a></li>
       </ul>
     </div>
   </nav>
@@ -395,6 +396,55 @@ Otak kreatif di balik merchandise Cilok Dash yang lucu dan menarik. Mengubah kar
 
     </div>
   </section>
+
+  <!-- ✦ RATING ✦ -->
+<section class="section rating-section" id="rating">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">⭐ Rating</span>
+      <h2 class="section-title">Ulasan Pemain</h2>
+      <p class="section-sub">Bagaimana pendapatmu tentang Cilok Dash? 🎮</p>
+    </div>
+
+    <div class="rating-wrap">
+
+      <!-- Form -->
+      <div class="rating-form-card">
+        <p class="rating-hint">Berikan penilaianmu!</p>
+
+        <div class="star-row" id="starRow">
+          <span class="star" data-val="1">★</span>
+          <span class="star" data-val="2">★</span>
+          <span class="star" data-val="3">★</span>
+          <span class="star" data-val="4">★</span>
+          <span class="star" data-val="5">★</span>
+        </div>
+        <p class="star-label" id="starLabel"></p>
+
+        <input type="text" id="nameInput" class="rating-input" placeholder="Nama kamu" />
+        <textarea id="commentInput" class="rating-textarea" placeholder="Komentar kamu tentang game ini..."></textarea>
+
+        <button class="btn btn-primary" id="submitRating">Kirim Rating ⭐</button>
+        <p class="rating-err" id="errMsg"></p>
+      </div>
+
+      <!-- Summary -->
+      <div class="rating-summary" id="ratingSummary" style="display:none;">
+        <div class="avg-score-wrap">
+          <span class="avg-score" id="avgScore">–</span>
+          <div>
+            <div class="avg-stars" id="avgStars"></div>
+            <p class="avg-count" id="totalCount"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- List -->
+      <div class="review-list" id="reviewList"></div>
+
+    </div>
+  </div>
+</section>
 
   <!-- ✦ FOOTER ✦ -->
   <footer class="footer">
