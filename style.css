@@ -497,6 +497,7 @@ kbd {
   max-width: 300px;
   margin: 0 auto;
 }
+.scriptwriter { background: #FFD4A8; color: #8B4500; }
 .dev-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: var(--shadow-lg);
@@ -991,6 +992,26 @@ kbd {
   .about-grid { grid-template-columns: 1fr; }
   .gallery-item--wide { grid-column: span 1; }
   .dev-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex !important;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: rgba(255, 248, 240, 0.97);
+    padding: 16px 20px 24px;
+    border-bottom: 2px solid var(--purple);
+    z-index: 999;
+  }
+  .nav-links.open {
+    display: flex !important;
+  }
 }
 
 /* Mobile */
