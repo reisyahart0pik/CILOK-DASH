@@ -614,9 +614,8 @@ kbd {
   cursor: pointer;
   box-shadow: var(--shadow-sm);
    transition: all 0.3s ease;
-  aspect-ratio: 16/10;
-   max-width:220px;
-    margin:auto;
+ aspect-ratio: 16/10;
+  width: 100%;
 }
 .gallery-item:hover {
   transform: translateY(-4px) scale(1.02);

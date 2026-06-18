@@ -28,7 +28,7 @@ filterButtons.forEach(button => {
                 filter === "all" ||
                 item.dataset.type === filter
             ) {
-                item.style.display = "block";
+                item.style.display = "";
             } else {
                 item.style.display = "none";
             }
